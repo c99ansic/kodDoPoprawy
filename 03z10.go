@@ -1,8 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"unicode/utf8"
+)
 
 func main() {
-	fmt.Println("Ilość znaków napisu poniżej to:)
-	fmt.Println(len("hejka programistyczne świry"[100]))
+	fmt.Println("Ilość znaków napisu poniżej to:")
+	msg := "hejka programistyczne świry"
+	// Ilość run -> znaków
+	fmt.Println(utf8.RuneCountInString(msg))
+	// Ilość bajrtów
+	fmt.Println(len(msg))
 }

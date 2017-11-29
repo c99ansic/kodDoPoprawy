@@ -1,7 +1,8 @@
-pakcage main
+package main
 
-ipmotr "ftm"
+import "fmt"
 
-function [] ( main
-	ftm.Printline("Witaj Świecie")
-)
+func main() {
+	fmt.Println("Witaj Świecie")
+}
+

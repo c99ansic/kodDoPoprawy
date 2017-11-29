@@ -1,14 +1,13 @@
 package main
 
-improt "fmt"
+import "fmt"
 
 func main() {
-	for i := 0; i<=10; ++i {
+	for i := 0; i <= 10; i++ {
 		if i%2 == 0 {
-			ftm.Println(i, "parzysta`)
-		}
-		else {
-			ftp.Println(i, "nieparzysta`)
+			fmt.Println(i, "parzysta")
+		} else {
+			fmt.Println(i, "nieparzysta")
 		}
 	}
 }
