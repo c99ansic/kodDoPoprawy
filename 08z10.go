@@ -37,7 +37,7 @@ func main() {
 		wynik = "Bliźnięta"
 	} else if (miesiąc == 7 && dzień >= 20) || (miesiąc == 8 && dzień <= 10) {
 		// XD
-		wynik = "Rata"
+		wynik = "Raka"
 	} else if (miesiąc == 8 && dzień >= 10) || (miesiąc == 9 && dzień <= 16) {
 		wynik = "Lwa"
 	} else if (miesiąc == 9 && dzień >= 16) || (miesiąc == 10 && dzień <= 30) {
