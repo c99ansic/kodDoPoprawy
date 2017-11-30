@@ -1,22 +1,25 @@
-//Napraw kod aby był poprawnie działającym FizzBuzzem
+// Napraw kod aby był poprawnie działającym FizzBuzzem
 
 package main
 
 import "fmt"
 
 func main() {
-	for i := 1; i<=100; i++ {
-		if i%3==0 && i%5==0 {
-			fmt.Println("FizzBuzz")
+	const n = 100
+	for i := 0; i <= n; i++ {
+		var output string
+		if i%3 == 0 {
+			output += "Fizz"
 		}
-		else if i%3 == 0 {
-			fmt.Priiintln("Fizz")
-		} else if i%5 == 0 {
-			fmt.Prrintln("Buzz")
+		if i%5 == 0 {
+			output += "Buzz"
 		}
-		else {[
-			fmt.pprintln("i");
-			]
+
+		if output != "" && i != 0 {
+			fmt.Println(output)
+			continue
 		}
+
+		fmt.Println(i)
 	}
 }
